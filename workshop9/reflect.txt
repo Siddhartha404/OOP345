@@ -1,0 +1,8 @@
+//Name: Siddhartha Thapa Chhetri
+//Email: sthapa-chhetri2@myseneca.ca
+//ID: 147913222
+//Date:2024/07/28
+//I declare that this submission is the result of my own work and I only copied the code that my professor provided to complete my workshops and assignments.This submitted piece of work has not been shared with any other student or 3rd party content provider.
+
+Completing this workshop on multi-threading and the std::thread class provided valuable insights into concurrent programming and binary file handling. Using binary files enhanced efficiency and data integrity by allowing faster reading and writing without conversion, as demonstrated in the ProcessData constructor. Function binding with std::bind facilitated managing multi-threaded function calls by pre-specifying arguments, simplifying thread creation and reducing errors. The primary advantage of multi-threading was the significant performance improvement for CPU-bound tasks. By partitioning data and processing each partition concurrently, I effectively reduced computation time for calculating average and variance factors, leveraging the full potential of available CPU cores. This workshop emphasized the practical benefits of binary file operations and the power of multi-threaded processing in handling large datasets efficiently.
+

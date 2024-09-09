@@ -1,0 +1,110 @@
+Script started on Sun 14 Jul 2024 09:08:52 PM EDT
+==141152== Memcheck, a memory error detector
+==141152== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==141152== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==141152== Command: ws baked_goods.txt
+==141152== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Command Line:
+--------------------------
+  1: ws
+  2: baked_goods.txt
+--------------------------
+
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  Invalid BakedType
+==141152== 
+==141152== Process terminating with default action of signal 6 (SIGABRT)
+==141152==    at 0x57E9387: raise (in /usr/lib64/libc-2.17.so)
+==141152==    by 0x57EAA77: abort (in /usr/lib64/libc-2.17.so)
+==141152==    by 0x4EDB83A: __gnu_cxx::__verbose_terminate_handler() [clone .cold] (vterminate.cc:95)
+==141152==    by 0x4EEA9E5: __cxxabiv1::__terminate(void (*)()) (eh_terminate.cc:48)
+==141152==    by 0x4EEAA50: std::terminate() (eh_terminate.cc:58)
+==141152==    by 0x4EEAC93: __cxa_throw (eh_throw.cc:98)
+==141152==    by 0x402DF4: seneca::Bakery::stringToBakedType(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (Bakery.cpp:14)
+==141152==    by 0x402F1B: seneca::Bakery::Bakery(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (Bakery.cpp:28)
+==141152==    by 0x4025C3: main (w7_p1_prof.cpp:27)
+==141152== 
+==141152== HEAP SUMMARY:
+==141152==     in use at exit: 82,732 bytes in 6 blocks
+==141152==   total heap usage: 7 allocs, 1 frees, 82,764 bytes allocated
+==141152== 
+==141152== 42 bytes in 1 blocks are still reachable in loss record 1 of 6
+==141152==    at 0x4C2B87D: operator new(unsigned long) (vg_replace_malloc.c:472)
+==141152==    by 0x4F2D0EC: allocate (new_allocator.h:147)
+==141152==    by 0x4F2D0EC: std::string::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) (cow_string.h:3602)
+==141152==    by 0x4F10156: _S_construct<char const*> (cow_string.h:3161)
+==141152==    by 0x4F10156: _S_construct<char const*> (cow_string.h:3146)
+==141152==    by 0x4F10156: _S_construct_aux<char const*> (cow_string.h:2139)
+==141152==    by 0x4F10156: _S_construct<char const*> (cow_string.h:2160)
+==141152==    by 0x4F10156: basic_string (cow_string.h:605)
+==141152==    by 0x4F10156: std::logic_error::logic_error(char const*) (cow-stdexcept.cc:87)
+==141152==    by 0x4F101F8: std::invalid_argument::invalid_argument(char const*) (cow-stdexcept.cc:93)
+==141152==    by 0x402DE2: seneca::Bakery::stringToBakedType(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (Bakery.cpp:14)
+==141152==    by 0x402F1B: seneca::Bakery::Bakery(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (Bakery.cpp:28)
+==141152==    by 0x4025C3: main (w7_p1_prof.cpp:27)
+==141152== 
+==141152== 58 bytes in 1 blocks are still reachable in loss record 2 of 6
+==141152==    at 0x4C2B87D: operator new(unsigned long) (vg_replace_malloc.c:472)
+==141152==    by 0x4F7F079: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (basic_string.tcc:328)
+==141152==    by 0x4F80767: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_append(char const*, unsigned long) (basic_string.tcc:419)
+==141152==    by 0x4F03FB1: append (basic_string.h:1447)
+==141152==    by 0x4F03FB1: std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) (istream-string.cc:161)
+==141152==    by 0x403108: seneca::Bakery::Bakery(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (Bakery.cpp:24)
+==141152==    by 0x4025C3: main (w7_p1_prof.cpp:27)
+==141152== 
+==141152== 144 bytes in 1 blocks are possibly lost in loss record 3 of 6
+==141152==    at 0x4C2B15C: malloc (vg_replace_malloc.c:431)
+==141152==    by 0x4EE997F: __cxa_allocate_exception (eh_alloc.cc:398)
+==141152==    by 0x402DD2: seneca::Bakery::stringToBakedType(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (Bakery.cpp:14)
+==141152==    by 0x402F1B: seneca::Bakery::Bakery(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (Bakery.cpp:28)
+==141152==    by 0x4025C3: main (w7_p1_prof.cpp:27)
+==141152== 
+==141152== 568 bytes in 1 blocks are still reachable in loss record 4 of 6
+==141152==    at 0x4C2B15C: malloc (vg_replace_malloc.c:431)
+==141152==    by 0x5821C4C: __fopen_internal (in /usr/lib64/libc-2.17.so)
+==141152==    by 0x4F0BEAF: std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int) (basic_file.cc:255)
+==141152==    by 0x4F4F839: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (fstream.tcc:184)
+==141152==    by 0x4F500D1: open (fstream:339)
+==141152==    by 0x4F500D1: open (fstream:706)
+==141152==    by 0x4F500D1: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode) (fstream:574)
+==141152==    by 0x402E5C: seneca::Bakery::Bakery(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (Bakery.cpp:18)
+==141152==    by 0x4025C3: main (w7_p1_prof.cpp:27)
+==141152== 
+==141152== 8,192 bytes in 1 blocks are still reachable in loss record 5 of 6
+==141152==    at 0x4C2CA43: operator new[](unsigned long) (vg_replace_malloc.c:714)
+==141152==    by 0x4F4BBB3: _M_allocate_internal_buffer (fstream.tcc:56)
+==141152==    by 0x4F4BBB3: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (fstream.tcc:49)
+==141152==    by 0x4F4F851: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (fstream.tcc:187)
+==141152==    by 0x4F500D1: open (fstream:339)
+==141152==    by 0x4F500D1: open (fstream:706)
+==141152==    by 0x4F500D1: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode) (fstream:574)
+==141152==    by 0x402E5C: seneca::Bakery::Bakery(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (Bakery.cpp:18)
+==141152==    by 0x4025C3: main (w7_p1_prof.cpp:27)
+==141152== 
+==141152== 73,728 bytes in 1 blocks are still reachable in loss record 6 of 6
+==141152==    at 0x4C2B15C: malloc (vg_replace_malloc.c:431)
+==141152==    by 0x4EE72CD: pool (eh_alloc.cc:235)
+==141152==    by 0x4EE72CD: __static_initialization_and_destruction_0 (eh_alloc.cc:373)
+==141152==    by 0x4EE72CD: _GLOBAL__sub_I_eh_alloc.cc (eh_alloc.cc:456)
+==141152==    by 0x400F9C2: _dl_init (in /usr/lib64/ld-2.17.so)
+==141152==    by 0x4001179: ??? (in /usr/lib64/ld-2.17.so)
+==141152==    by 0x1: ???
+==141152==    by 0x1FFF000232: ???
+==141152==    by 0x1FFF000235: ???
+==141152== 
+==141152== LEAK SUMMARY:
+==141152==    definitely lost: 0 bytes in 0 blocks
+==141152==    indirectly lost: 0 bytes in 0 blocks
+==141152==      possibly lost: 144 bytes in 1 blocks
+==141152==    still reachable: 82,588 bytes in 5 blocks
+==141152==                       of which reachable via heuristic:
+==141152==                         stdstring          : 42 bytes in 1 blocks
+==141152==         suppressed: 0 bytes in 0 blocks
+==141152== 
+==141152== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+bash: line 1: 141152 Aborted                 /usr/local/valgrind-3.21.0/bin/valgrind --show-error-list=yes --leak-check=full --show-leak-kinds=all --track-origins=yes ws baked_goods.txt
+
+Script done on Sun 14 Jul 2024 09:08:53 PM EDT

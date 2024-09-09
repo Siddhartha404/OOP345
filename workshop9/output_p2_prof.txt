@@ -1,0 +1,64 @@
+Script started on Fri 10 May 2024 08:12:28 PM EDT
+==187535== Memcheck, a memory error detector
+==187535== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==187535== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==187535== Command: ws data_int.bin data_int_target.bin
+==187535== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Command Line:
+--------------------------
+  1: ws
+  2: data_int.bin
+  3: data_int_target.bin
+--------------------------
+
+==========================================================================================
+                   Average and variance of record-values using 1 thread
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.bin': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Read [2000005] bytes from the files; the content is the same.
+Data statistics ("data_int.bin"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 5607 milliseconds.
+==========================================================================================
+
+
+==========================================================================================
+                   Average and variance of record-values using 2 threads
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.bin': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Data statistics ("data_int.bin"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 2288 milliseconds.
+==========================================================================================
+
+
+==========================================================================================
+                   Average and variance of record-values using 4 threads
+------------------------------------------------------------------------------------------
+Item's count in file 'data_int.bin': 500000
+  [2861, 2446, 3099, ... , 5531, 2901, 1091]
+Data statistics ("data_int.bin"):
+ Average:       4915.392782
+ Variance:   5515121.375856
+Time required to compute average and variance: 1295 milliseconds.
+==========================================================================================
+
+[38;5;9m------------------------
+End Testing the Program![0m
+==187535== 
+==187535== HEAP SUMMARY:
+==187535==     in use at exit: 0 bytes in 0 blocks
+==187535==   total heap usage: 57 allocs, 57 frees, 6,147,261 bytes allocated
+==187535== 
+==187535== All heap blocks were freed -- no leaks are possible
+==187535== 
+==187535== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Fri 10 May 2024 08:12:39 PM EDT

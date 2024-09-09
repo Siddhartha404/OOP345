@@ -1,0 +1,7 @@
+//Name: Siddhartha Thapa Chhetri
+//Email: sthapa-chhetri2@myseneca.ca
+//ID: 147913222
+//I declare that this submission is the result of my own work and I only copied the code that my professor provided to complete my workshops and assignments.This submitted piece of work has not been shared with any other student or 3rd party content provider.
+
+
+In this workshop, I gained deeper insights into advanced C++ concepts, including singletons, template classes, and XOR encryption. One crucial lesson was the necessity of using std::shared_ptr instead of std::unique_ptr for the Database class. A unique_ptr enforces unique ownership, preventing shared access, while shared_ptr allows multiple references, essential for the singleton's global accessibility. Transforming the Database class into a templated class involved adding template <typename T>, replacing specific types with T, and moving the implementation to the header file for visibility. The encryptDecrypt function was specialized for std::string and long long types, illustrating template flexibility. An alternative singleton implementation without static members could use dependency injection, managing the singleton externally and passing it as needed, enhancing flexibility and testability. The absence of copy/move operations in the Database class is intentional to prevent accidental duplication, adhering to the Singleton pattern.

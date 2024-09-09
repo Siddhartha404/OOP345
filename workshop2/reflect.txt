@@ -1,0 +1,11 @@
+//Name: Siddhartha Thapa Chhetri
+//Email: sthapa-chhetri2@myseneca.ca
+//ID: 147913222
+//I declare that this submission is the result of my own work and I only copied the code that my professor provided to complete my workshops and assignments.This submitted piece of work has not been shared with any other student or 3rd party content provider.
+
+
+Workshop 2 focused on move semantics in C++, emphasizing the importance of optimizing resource management. I learned about move constructors and move assignment operators, key features introduced in C++11. The ProteinDatabase class was upgraded to include these optimizations, improving efficiency in transferring resources between objects.
+
+One significant aspect I grasped was the difference in performance between copy and move operations. Move operations involve transferring ownership of resources, such as dynamically allocated memory, from one object to another using std::move(), resulting in significant time savings compared to copying data. For instance, the move constructor in ProteinDatabase efficiently transfers the vector of protein sequences from one object to another.
+
+Though I encountered challenges in understanding the nuances of move semantics, careful reading of course notes and referencing solution code helped me overcome these difficulties. Overall, Workshop 2 provided valuable insights into move semantics and its application in modern C++ programming.

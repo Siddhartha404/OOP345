@@ -1,0 +1,6 @@
+//Name: Siddhartha Thapa Chhetri
+//Email: sthapa-chhetri2@myseneca.ca
+//ID: 147913222
+//I declare that this submission is the result of my own work and I only copied the code that my professor provided to complete my workshops and assignments. This submitted piece of work has not been shared with any other student or 3rd party content provider.
+
+In completing this workshop, additions to the Book class, such as m_title, m_numChapters, and m_numPages, were essential to manage book information efficiently, enabling validation, printing, and average page per chapter calculation functionalities. Defining m_smallestItem and m_largestItem as static members outside the class allowed for specialization based on different template parameters, ensuring appropriate initialization and storage for various types and capacities. Specializing these objects for Book and 10 provided valid default values, crucial for the initial state of the collection. Additionally, initializing m_smallestItem and m_largestItem for Book and 72 ensured consistency across modules inheriting from the Collection class. These adjustments ensured seamless integration with collection modules, meeting the workshop requirements effectively.

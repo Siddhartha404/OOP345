@@ -1,0 +1,57 @@
+Script started on Sat 18 May 2024 12:36:48 AM EDT
+==20108== Memcheck, a memory error detector
+==20108== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==20108== Using Valgrind-3.21.0 and LibVEX; rerun with -h for copyright info
+==20108== Command: ws day1.txt day2.txt
+==20108== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Command Line:
+--------------------------
+  1: ws
+  2: day1.txt
+  3: day2.txt
+--------------------------
+
+--------------------
+    Day 1
+--------------------
+Name          |Order Description        |Price w/Tax |Special Price
+1 . Liz       |Deluxe Fish Tacos        |10.16       |
+2 . Julian    |8 Piece Sushi Set        |9.03        |         7.88
+3 . Thomas    |BLT Sandwich             |8.58        |
+4 . Sarah     |Soup and Salad Combo     |7.90        |         6.75
+5 . Lisa      |Noodle Dumpling Soup     |6.77        |
+--------------------
+    Day 2
+--------------------
+Name          |Order Description        |Price w/Tax |Special Price
+6 . Ellen     |12 Piece Sushi Set       |12.53       |        11.33
+7 . Khalid    |Lobster Fried Rice       |14.81       |
+8 . Monica    |Reuben Sandwich          |9.79        |         8.59
+9 . Mikhail   |Egg Salad Wrap           |6.26        |
+10. Katarina  |Pepperoni Pizza Slice    |6.83        |         5.63
+11. No Order
+--------------------
+Recorded Delivery Food Orders
+--------------------
+Name          |Order Description        |Price w/Tax |Special Price
+12. Thomas    |BLT Sandwich             |8.65        |
+13. Lisa      |Noodle Dumpling Soup     |6.83        |
+14. Khalid    |Lobster Fried Rice       |14.81       |
+15. Monica    |Reuben Sandwich          |9.79        |         8.59
+--------------------
+
+[38;5;9m------------------------
+End Testing the Program![0m
+==20108== 
+==20108== HEAP SUMMARY:
+==20108==     in use at exit: 0 bytes in 0 blocks
+==20108==   total heap usage: 15 allocs, 15 frees, 91,818 bytes allocated
+==20108== 
+==20108== All heap blocks were freed -- no leaks are possible
+==20108== 
+==20108== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Sat 18 May 2024 12:36:49 AM EDT

@@ -1,0 +1,14 @@
+In line number 15 of your output:
+The output should be:
+001 | Armchair       | 654321 | 
+                     ^
+But your output is: 
+001 | Armchair                      | 654321 | 
+                     ^
+
+Unmatched character details:
+The character in column 22 is supposed to be:
+  [|] ASCII code(124)
+but you printed
+  [Space] ASCII code(32)
+

@@ -1,0 +1,14 @@
+In line number 190 of your output:
+The output should be:
+* Pastry     * Mini Cheese Cake     * 3     * 80    *     1.00 * 
+               ^
+But your output is: 
+* Pastry     * Croline              * 2     * 5     *     1.00 * 
+               ^
+
+Unmatched character details:
+The character in column 16 is supposed to be:
+  [M] ASCII code(77)
+but you printed
+  [C] ASCII code(67)
+

@@ -1,0 +1,15 @@
+// Name: Siddhartha Thapa Chhetri
+// Seneca Student ID: 147913222
+// Seneca email: sthapa-chhetri2@myseneca.ca
+// Date of completion: 2024/08/03
+//
+// I confirm that I am the only author of this file
+// and the content was created entirely by me.
+
+In this project, I developed a production line simulation by implementing the Workstation, Station, and LineManager classes. I managed customer orders, set up state transitions, and ensured smooth component integration.
+
+Key Learnings:
+System Design: Improved skills in designing and integrating complex systems.
+State Management: Gained experience in handling and transitioning order states.
+Robustness: Enhanced understanding of error handling and validation.
+This project provided valuable insights into class design and system integration.
